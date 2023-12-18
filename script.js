@@ -33,10 +33,10 @@ let modalVisible = false;
 
 function loadTickets(color) {
   let allTasks = localStorage.getItem("allTasks");
-  if (allTasks != null) {
+  if (allTasks != null || allTasks != 'null') {
     allTasks = JSON.parse(allTasks);
     if (color) {
-      allTasks = allTasks.filter(function (data) {
+      allTasks = allTasks?.filter(function (data) {
         return data.priority == color;
       });
     }
@@ -68,10 +68,10 @@ let deletebtn = document.querySelector(".delete-button");
 deletebtn.addEventListener("click", function (e) {
   let selectedTickets = document.querySelectorAll(".ticket.active");
   let allTasks = JSON.parse(localStorage.getItem("allTasks"));
-  for (let i = 0; i < selectedTickets.length; i++) {
+  for (let i = 0; i < selectedTickets?.length; i++) {
     selectedTickets[i].remove();
     let ticketID = selectedTickets[i].querySelector(".ticket-id").innerText;
-    allTasks = allTasks.filter(function (data) {
+    allTasks = allTasks?.filter(function (data) {
       return "#" + data.ticketId != ticketID;
     });
   }
@@ -155,7 +155,7 @@ function addTicket(taskModal, e) {
     //adding tasks in local storage
 
     let allTasks = localStorage.getItem("allTasks");
-    if (allTasks == null || allTasks == undefined) {
+    if (allTasks == null || allTasks == 'null') {
       let data = [{ ticketId: id, task: task, priority: selectedPriority }];
       localStorage.setItem("allTasks", JSON.stringify(data));
     } else {
