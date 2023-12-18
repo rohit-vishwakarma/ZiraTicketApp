@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","screen","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware","register"];analytics.factory=function(e){return function(){if(window.analytics.initialized)return window.analytics[e].apply(window.analytics,arguments);var i=Array.prototype.slice.call(arguments);if(["track","screen","alias","group","page","identify"].indexOf(e)>-1){var c=document.querySelector("link[rel='canonical']");i.push({__t:"bpc",c:c&&c.getAttribute("href")||void 0,p:location.pathname,u:location.href,s:location.search,t:document.title,r:document.referrer})}i.unshift(e);analytics.push(i);return analytics}};for(var i=0;i<analytics.methods.length;i++){var key=analytics.methods[i];analytics[key]=analytics.factory(key)}analytics.load=function(key,i){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=i};analytics._writeKey="lrUnghcc68A0FsbICeDt2B3LTxoI9vVW";;analytics.SNIPPET_VERSION="5.2.0";
+        analytics.load("lrUnghcc68A0FsbICeDt2B3LTxoI9vVW");
+        analytics.page();
+        }}();
+      </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +35,7 @@
             <div class="title-container"><span class="title">ZIRA TICKET APP</span></div>
             <div class="add-delete-container">
                 <div class="add-button">
-                    <span class="material-icons action">add_task</span>                   
+                    <span class="material-icons action">add_task</span>
                 </div>
                 <div class="delete-button">
                     <span class="material-icons action">delete</span>
@@ -40,12 +46,12 @@
             <!-- <div class="modal">
                 <div class="modal-task-added" contenteditable="true"></div>
                 <div class="modal-priority-list">
-                   
+
                         <div class="modal-purple modal-filter"></div>
                         <div class="modal-red modal-filter"></div>
                         <div class="modal-green modal-filter"></div>
                         <div class="modal-blue modal-filter"></div>
-                    
+
                 </div>
             </div>  -->
             <!-- <div class="ticket">
@@ -53,7 +59,7 @@
                 <div class="ticket-id">#123</div>
                 <div class="task"></div>
             </div> -->
-        </div> 
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
     <script>
