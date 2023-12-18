@@ -131,7 +131,7 @@ function addTicket(taskModal, e) {
     taskModal.innerHTML.trim() != ""
   ) {
     let task = taskModal.innerText;
-    let id = Date.now()
+    let id = Date.now();
     // let id = uuid();
     // let ticket = document.createElement("div");
 
@@ -155,12 +155,12 @@ function addTicket(taskModal, e) {
     //adding tasks in local storage
 
     let allTasks = localStorage.getItem("allTasks");
-    if (allTasks == null) {
+    if (allTasks == null || allTasks == undefined) {
       let data = [{ ticketId: id, task: task, priority: selectedPriority }];
       localStorage.setItem("allTasks", JSON.stringify(data));
     } else {
       let data = JSON.parse(allTasks);
-      data.push({ ticketId: id, task: task, priority: selectedPriority });
+      data?.push({ ticketId: id, task: task, priority: selectedPriority });
       localStorage.setItem("allTasks", JSON.stringify(data));
     }
     let activefilter = document.querySelector(".filter.active");

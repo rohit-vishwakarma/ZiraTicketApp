@@ -1,15 +1,18 @@
-body{
+body {
     margin: 0%;
 }
-*{
+
+* {
     box-sizing: border-box;
 }
-.navbar{
+
+.navbar {
     height: 12vh;
     background-color: rgb(22, 20, 20);
     display: flex;
 }
-.ticket-container{
+
+.ticket-container {
     min-height: 88vh;
     background-color: aquamarine;
     padding: 3rem;
@@ -17,96 +20,128 @@ body{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
 .filter-container,
 .add-delete-container,
-.title-container{
+.title-container {
     height: 8vh;
     margin-top: 2vh;
     margin-left: 8vw;
     border-radius: 3px;
     background-color: rgb(98, 162, 214);
 }
-.filter-container{
+
+.filter-container {
     width: 18vw;
     display: flex;
-    /* display: inline-block; no use*/ 
+    /* display: inline-block; no use*/
 }
-.add-delete-container{
+
+.add-delete-container {
     width: 9vw;
     display: flex;
     /* display: inline-block; */
 }
-.title-container{
+
+.title-container {
     width: 36vw;
     background-color: rgb(161, 208, 250);
     text-align: center;
     /* display: flex; */
     /* font-size: 2.5rem; */
-    
+
 }
-.title{
+
+.title {
     height: 8vh;
     font-size: 2.5rem;
     color: rgb(255, 251, 8);
 }
-.filter{
+
+.filter {
     height: 100%;
     width: 25%;
     /* display: flex; */
 }
-.purple, .red, .green, .blue{
+
+.purple,
+.red,
+.green,
+.blue {
     display: block;
     width: 40%;
     height: 40%;
     border-radius: 100%;
     /* margin-left: 30%; */
-    margin-top: calc(8vh * 0.3); /* auto*/
+    margin-top: calc(8vh * 0.3);
+    /* auto*/
     margin-bottom: calc(8vh * 0.3);
     margin-left: calc(4.5vw * 0.3);
     margin-right: calc(4.5vw * 0.3);
 }
-.purple, .modal-purple, .ticket-color-purple{
+
+.purple,
+.modal-purple,
+.ticket-color-purple {
     background-color: purple;
 }
-.red, .modal-red, .ticket-color-red{
+
+.red,
+.modal-red,
+.ticket-color-red {
     background-color: red;
 }
-.green, .modal-green, .ticket-color-green{
+
+.green,
+.modal-green,
+.ticket-color-green {
     background-color: green;
 }
-.blue, .modal-blue, .ticket-color-blue{
+
+.blue,
+.modal-blue,
+.ticket-color-blue {
     background-color: blue;
 }
-.filter:hover{
+
+.filter:hover {
     background-color: rgb(31, 30, 30);
     cursor: pointer;
     /* border-radius: 3px; */
 }
-.filter.active{
-    background-color:  rgb(31, 30, 30);
+
+.filter.active {
+    background-color: rgb(31, 30, 30);
 }
-.add-button, .delete-button{
- height: 100%;
- width: 50%;
- /* display: flex; */
+
+.add-button,
+.delete-button {
+    height: 100%;
+    width: 50%;
+    /* display: flex; */
 }
-.action{
+
+.action {
     display: block;
     height: 40%;
     width: 40%;
     border-radius: 100%;
-    margin-top: calc(8vh * 0.3); /* auto*/
+    margin-top: calc(8vh * 0.3);
+    /* auto*/
     margin-bottom: calc(8vh * 0.3);
     margin-left: calc(4.5vw * 0.3);
     margin-right: calc(4.5vw * 0.3);
     /* background-color: white; */
-    
+
 }
-.add-button:hover, .delete-button:hover{
+
+.add-button:hover,
+.delete-button:hover {
     background-color: rgb(31, 30, 30);
     cursor: pointer;
 }
-.modal{
+
+.modal {
     height: 18rem;
     width: 35rem;
     background-color: rgb(183, 250, 250);
@@ -116,57 +151,67 @@ body{
     left: calc((100vw - 35rem) /2);
     box-shadow: 5px 8px 9px rgb(34, 28, 28);
 }
-.modal-task-added{
+
+.modal-task-added {
     width: 70%;
     height: 100%;
     padding: 3rem;
     /* contenteditable blackoutline to be none */
-    outline: none; 
+    outline: none;
     overflow: auto;
 }
-.modal-priority-list{
+
+.modal-priority-list {
     display: flex;
     flex-direction: column;
     width: 30%;
     height: 100%;
     padding: 3rem;
     /* it works with display flex */
-    justify-content: space-between; 
+    justify-content: space-between;
     background-color: rgb(22, 20, 20);
 }
-.modal-filter{
+
+.modal-filter {
     width: 100%;
     height: 20%;
 }
-.modal-filter:hover{
+
+.modal-filter:hover {
     opacity: 0.5;
     cursor: pointer;
 }
-.modal-filter.active{
+
+.modal-filter.active {
     border: 3px solid;
 }
-.ticket{
+
+.ticket {
     height: 9rem;
     width: 14rem;
     background-color: rgb(253, 166, 135);
     margin-bottom: 15px;
 }
-.ticket-color{
+
+.ticket-color {
     height: 6%;
     width: 100%;
 }
-.ticket-id{
+
+.ticket-id {
     height: 15%;
     width: 100%;
     padding: 3%;
     background-color: rgb(161, 122, 197);
     color: rgb(226, 216, 216);
 }
-.task{
+
+.task {
     height: 79%;
     width: 100%;
     padding: 3%;
 }
-.ticket.active{
+
+.ticket.active {
     box-shadow: 0 0 3px 1px;
 }
